@@ -34,7 +34,7 @@ body {
 }
 
 .navbar.sticky-top {
-    top: 40px;
+    top: 45px;
     z-index: 1020;
 }
 
@@ -162,9 +162,9 @@ body {
 }
 
 .img-clip-wrapper {
-    width: 710px;                     
-    height: 600px;                    
-    overflow: hidden;                 
+    width: 710px;
+    height: 600px;
+    overflow: hidden;
     position: relative;
     z-index: 1;
     margin-left: 7rem;
@@ -173,7 +173,7 @@ body {
 
 
 .img-clip-wrapper img {
-    width: 800px;                    
+    width: 800px;
     max-width: none;
     object-fit: cover;
     position: absolute;
@@ -197,7 +197,7 @@ body {
 }
 
 @media (max-width: 992px) {
-    .img-clip-wrapper{
+    .img-clip-wrapper {
         width: 500px;
         height: 610px;
         margin-left: 7rem;
@@ -213,7 +213,7 @@ body {
 }
 
 @media (max-width: 576px) {
-    .img-clip-wrapper{
+    .img-clip-wrapper {
         width: 300px;
         height: 900px;
         margin-left: 1rem;
