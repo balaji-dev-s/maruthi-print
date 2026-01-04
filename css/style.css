@@ -132,6 +132,8 @@ body {
 .why-choose-us-text,
 .our-vision-text,
 .our-mission-text,
+.services-text,
+.our-services-text,
 .learn-more-btn {
     font-family: 'Oswald', sans-serif !important;
 }
@@ -226,9 +228,8 @@ body {
 .vision-section {
     position: relative;
     display: block;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    height: 650px;
 }
 
 @media (max-width: 992px) {
@@ -253,4 +254,20 @@ body {
         max-width: 320px;
         top: 4%;
     }
+}
+
+.service-wrapper {
+    width: 310px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-wrapper img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
