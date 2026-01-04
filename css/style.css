@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+:root {
+    --bs-body-font-family: 'Archivo', sans-serif !important;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--bs-body-font-family);
+}
+
+.ph-number-container,
+.email-id-container,
+.social-link-container {
+    font-family: 'Archivo', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.bg-green {
+    background-color: #79AA41 !important;
+}
+
+.flex-tophead-gap {
+    column-gap: 1rem !important;
+    row-gap: 0.25rem !important;
+}
+
+.container-fluid.bg-green.sticky-top {
+    z-index: 1030;
+}
+
+.navbar.sticky-top {
+    top: 40px;
+    z-index: 1020;
+}
+
+.feature-container {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    transform-origin: left center !important;
+    will-change: transform !important;
+}
+
+.feature-container h4 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.feature-container h4:hover {
+    color: #79AA41 !important;
+    cursor: pointer;
+}
+
+.feature-container-description {
+    font-size: 15px !important;
+    font-family: 'Archivo', sans-serif !important;
+    font-weight: bold;
+}
+
+.text-green {
+    color: #79AA41 !important;
+}
+
+#carouselExampleFade {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-main-container {
+    margin-top: -120px;
+    z-index: 2;
+    position: relative;
+}
+
+#carouselExampleFade .carousel-inner {
+    overflow: hidden;
+    position: relative;
+}
+
+#carouselExampleFade .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExampleFade .carousel-img {
+    width: auto;
+    min-width: 100%;
+    max-width: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+    #carouselExampleFade .carousel-img {
+        min-width: 120%;
+    }
+
+    .feature-main-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .feature-container {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #carouselExampleFade .carousel-img {
+        min-width: 140%;
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselExampleFade .carousel-img {
+        min-width: 160%;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselExampleFade .carousel-img {
+        min-width: 180%;
+    }
+}
+
+.about-us-text,
+.why-choose-us-text,
+.our-vision-text,
+.learn-more-btn {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.vision-container {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    max-width: 500px;
+    min-width: 250px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.our-vision-desc {
+    font-family: 'Archivo', sans-serif !important;
+    font-size: 15px !important;
+}
+
+.learn-more-btn {
+    letter-spacing: 0;
+    transition: letter-spacing 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    letter-spacing: 1px;
+}
+
+.img-clip-wrapper {
+    width: 710px;                     
+    height: 600px;                    
+    overflow: hidden;                 
+    position: relative;
+    z-index: 1;
+    margin-left: 7rem;
+    margin-right: 0;
+}
+
+
+.img-clip-wrapper img {
+    width: 800px;                    
+    max-width: none;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 1300px) {
+    .img-clip-wrapper {
+        margin-left: 9rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .img-clip-wrapper {
+        width: 600px;
+        height: 750px;
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-clip-wrapper{
+        width: 500px;
+        height: 610px;
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-clip-wrapper {
+        width: 500px;
+        height: 600px;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-clip-wrapper{
+        width: 300px;
+        height: 900px;
+        margin-left: 1rem;
+    }
+}
+
+
+.vision-section {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .vision-container {
+        width: 50%;
+        max-width: 400px;
+        top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-container {
+        width: 70%;
+        max-width: 350px;
+        top: 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-container {
+        width: 90%;
+        max-width: 320px;
+        top: 4%;
+    }
+}
