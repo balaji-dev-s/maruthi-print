@@ -131,6 +131,7 @@ body {
 .about-us-text,
 .why-choose-us-text,
 .our-vision-text,
+.our-mission-text,
 .learn-more-btn {
     font-family: 'Oswald', sans-serif !important;
 }
@@ -147,7 +148,8 @@ body {
     opacity: 0;
 }
 
-.our-vision-desc {
+.our-vision-desc,
+.our-mission-desc {
     font-family: 'Archivo', sans-serif !important;
     font-size: 15px !important;
 }
