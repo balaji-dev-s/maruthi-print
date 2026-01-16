@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -23,8 +24,8 @@
                 class="container px-4 d-flex flex-tophead-gap pt-2 pb-2 flex-wrap justify-content-center justify-content-lg-end">
                 <div class="ph-number-container text-14 d-flex gap-1 justify-content-center align-items-center">
                     <i class="bi bi-telephone-fill text-white"></i>
-                    <a href="tel:+919003225355" class="text-decoration-none text-white fw-bold">
-                        +91 90032 25355
+                    <a href="tel:+91 9486326400" class="text-decoration-none text-white fw-bold">
+                        +91 94863 26400
                     </a>
                 </div>
                 <div class="email-id-container text-14 d-flex gap-1 justify-content-center align-items-center">
@@ -144,9 +145,10 @@
                 <i class="bi bi-clipboard-fill fs-3 text-green mb-4"></i>
                 <h4 class="text-uppercase">Site survey</h4>
                 <div class="feature-container-description">
-                    Inspections of an area where work is proposed, to gather information for a design or an estimate to
-                    complete the initial tasks required for outdoor activity. It can determine a precise location,
-                    access, best orientation for the site, and the location of obstacles<br><br><br><br>
+                    Inspections of the proposed work area are conducted to collect essential information for design
+                    development and cost estimation. These initial assessments identify the exact site location, access
+                    points, optimal orientation, and the presence of any obstacles that may affect outdoor activities or
+                    construction.<br><br><br>
                 </div>
             </div>
             <div
@@ -154,9 +156,9 @@
                 <i class="bi bi-people-fill fs-3 text-green mb-4"></i>
                 <h4 class="text-uppercase">Project management</h4>
                 <div class="feature-container-description">
-                    Leading the work of a team to achieve goals and meet success criteria at a specified time. The
-                    primary challenge of project management is to achieve all of the project goals within the given
-                    constraints<br><br><br><br><br>
+                    We lead and coordinate team efforts to achieve project goals within defined timelines and
+                    constraints. By aligning people, processes, and priorities, we ensure smooth execution and
+                    successful delivery that meets clearly defined success criteria.<br><br><br><br>
                 </div>
             </div>
             <div
@@ -164,9 +166,9 @@
                 <i class="bi bi-check-circle-fill fs-3 text-green mb-4"></i>
                 <h4 class="text-uppercase">Nationwide Installation</h4>
                 <div class="feature-container-description pb-5">
-                    Nationwide Fixture Installations provides comprehensive installation services self-performed to your
-                    exact specifications. Regardless of the installation requirements, we put your needs first and get
-                    the job done right according to your goals, your timeline, and your budget.
+                    Nationwide Fixture Installations delivers comprehensive, self-performed installation services
+                    tailored to your exact specifications. No matter the scope or complexity, we prioritize your needs
+                    and execute every project to meet your goals, timeline, and budget—without compromise.
                 </div>
             </div>
         </div>
@@ -181,11 +183,12 @@
                 <img src="./assets/kevin-jiner-lq5hFF2q82Q-unsplash.jpg" alt="vision">
             </div>
             <div class="vision-container px-5 py-5">
-                <h3 class="our-vision-text text-uppercase text-white mt-5 mb-3">our vision</h3>
+                <h3 class="our-vision-text text-uppercase text-white mt-5 mb-3">about us</h3>
                 <p class="our-vision-desc text-white mb-4">
-                    We aim to be a prominent global services provider of facade contracting, design and engineering
-                    services and to play an influential role in the development of our industry. Our research and
-                    development leads to provide innovative and sustainable, futuristic structural design
+                    AP New Line Facade is a leading provider of exterior, interior, and signage solutions with over 20
+                    years of experience. We specialize in transforming commercial and residential spaces through
+                    innovative design, modern technology, and skilled craftsmanship. Using premium materials, we deliver
+                    durable, elegant, and cost effective solutions tailored to each client’s vision.
                 </p>
                 <div class="mb-5">
                     <a href="#" class="learn-more-btn d-flex align-items-center gap-2 text-white text-decoration-none 
@@ -222,7 +225,7 @@
             <h1 class="project-tag-text text-uppercase mb-5">Featured Projects</h1>
         </div>
 
-        <div class="container project-display-section d-flex justify-content-center gap-4 flex-wrap">
+        <div class="container project-display-section d-flex justify-content-center gap-4 flex-wrap mb-5 pb-5">
             <div class="project-col d-flex flex-column gap-4">
                 <img src="./assets/Featured_Projects_1.png" alt="Featured_Projects_1.png">
                 <img src="./assets/Featured_Projects_2.png" alt="Featured_Projects_2.png">
@@ -237,15 +240,63 @@
                 <img src="./assets/Featured_Projects_7.png" alt="Featured_Projects_7.png">
             </div>
         </div>
-
-
     </main>
+
+    <!-- enquiry and map section -->
+    <div class="container my-5">
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Form Column -->
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="form-container w-100">
+                    <span class="project-text text-uppercase text-green">enquiry</span>
+                    <h1 class="project-tag-text text-uppercase mb-5">send message</h1>
+
+                    <form class="needs-validation" method="POST" action="/submit-form" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required minlength="3">
+                            <div class="invalid-feedback">Please enter at least 3 characters.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required
+                                pattern="[0-9]{10}">
+                            <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <div class="invalid-feedback">Enter a valid email address.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Column -->
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="map-container w-100">
+                    <div id="map" class="w-100 h-100"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="./js/gsap.js"></script>
+    <script src="./js/formvalidation.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/map.js"></script>
 </body>
 
 </html>
