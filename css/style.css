@@ -40,7 +40,7 @@ body {
 
 .feature-container {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     transform-origin: left center !important;
     will-change: transform !important;
 }
@@ -134,12 +134,14 @@ body {
 .our-mission-text,
 .services-text,
 .our-services-text,
-.learn-more-btn {
+.learn-more-btn,
+.project-text,
+.project-tag-text {
     font-family: 'Oswald', sans-serif !important;
 }
 
 .vision-container {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 10%;
     right: 0;
@@ -150,8 +152,7 @@ body {
     opacity: 0;
 }
 
-.our-vision-desc,
-.our-mission-desc {
+.our-vision-desc {
     font-family: 'Archivo', sans-serif !important;
     font-size: 15px !important;
 }
@@ -257,16 +258,16 @@ body {
 }
 
 .service-wrapper {
-    width: 410px;
+    flex: 1 1 30%;
+    max-width: 410px;
     height: 400px;
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
 }
+
 
 .service-wrapper::after {
     content: "";
@@ -280,10 +281,24 @@ body {
 }
 
 .service-wrapper img {
-    width: 500px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+@media (max-width: 992px) {
+    .service-wrapper {
+        flex: 1 1 45%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 .service-wrapper h3 {
@@ -294,4 +309,28 @@ body {
     z-index: 1;
     font-family: 'Oswald', sans-serif !important;
     text-transform: uppercase;
+}
+
+.project-display-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-display-section img:hover{
+    opacity: .7;
+}
+
+@media (max-width: 992px) {
+    .project-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
