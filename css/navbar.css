@@ -17,13 +17,13 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #6c757d !important;
+    color: #182F61 !important;
 }
 
 
 .dropdown-menu {
     width: 220px !important;
-    border-top: 2.4px solid #79AA41 !important;
+    border-top: 2.4px solid #c11720 !important;
     border-radius: 0 !important;
     border-bottom: 0 !important;
     border-left: 0 !important;
@@ -38,16 +38,15 @@
 }
 
 .dropdown-item:hover {
-    color: #6c757d !important;
+    color: #182F61 !important;
 }
 
 .active {
-    color: #79AA41 !important;
+    color: #c11720 !important;
 }
 
 .active:hover {
-    color: #aee96b !important;
-    ;
+    color: #182F61 !important;
 }
 
 .navbar-toggler {

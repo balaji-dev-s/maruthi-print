@@ -21,7 +21,7 @@ body {
 }
 
 .bg-green {
-    background-color: #79AA41 !important;
+    background-color: #c11720 !important;
 }
 
 .flex-tophead-gap {
@@ -50,7 +50,7 @@ body {
 }
 
 .feature-container h4:hover {
-    color: #79AA41 !important;
+    color: #679cbc !important;
     cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .text-green {
-    color: #79AA41 !important;
+    color: #c11720 !important;
 }
 
 #carouselExampleFade {
@@ -138,6 +138,7 @@ body {
 .project-text,
 .project-tag-text {
     font-family: 'Oswald', sans-serif !important;
+    color: #182F61;
 }
 
 .vision-container {
@@ -152,6 +153,10 @@ body {
     opacity: 0;
 }
 
+.vision-container h3{
+    color: #679cbc !important;
+}
+
 .our-vision-desc {
     font-family: 'Archivo', sans-serif !important;
     font-size: 15px !important;
@@ -164,6 +169,7 @@ body {
 
 .learn-more-btn:hover {
     letter-spacing: 1px;
+    color: #679cbc !important;
 }
 
 .img-clip-wrapper {
@@ -350,6 +356,11 @@ body {
     border: 0;
     border-bottom: 1px solid gray;
     border-radius: 0;
+    color: #182F61 !important;
+}
+
+::placeholder{
+    color: #182F61 !important;
 }
 
 .form-container input:focus,
@@ -357,4 +368,10 @@ body {
     outline: none;
     box-shadow: none;
     border-bottom: 1px solid gray;
+}
+
+.send-btn{
+    background-color: #c11720 !important;
+    font-family: 'Oswald', sans-serif !important;
+    text-transform: uppercase;
 }
