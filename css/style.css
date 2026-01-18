@@ -51,7 +51,7 @@ body {
 
 .feature-container h4:hover {
     color: #679cbc !important;
-    cursor: pointer;
+    cursor: default;
 }
 
 .feature-container-description {
