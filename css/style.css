@@ -369,6 +369,7 @@ body {
     outline: none;
     box-shadow: none;
     border-bottom: 1px solid gray;
+    background: none;
 }
 
 .send-btn {
