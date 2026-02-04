@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // --- Logo Resize on Scroll ---
 gsap.to(".logo-lg", {
-  width: 120,
+  width: 190,
   ease: "power1.out",
   scrollTrigger: {
     trigger: "nav",

@@ -399,6 +399,14 @@ body {
     color: #182F61;
 }
 
+.footer-links a:hover{
+    color: #c11720;
+}
+
+.footer-links a:active{
+    opacity: .8;
+}
+
 .footer-links h5{
     color: #c11720 !important;
     font-family: 'Oswald', sans-serif !important;
