@@ -115,9 +115,6 @@
                 <div class="carousel-item">
                     <img src="./assets/slide4.png" class="carousel-img" alt="Slide 3">
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/slide5.png" class="carousel-img" alt="Slide 3">
-                </div>
             </div>
 
             <!-- Controls -->
@@ -138,7 +135,7 @@
         <div class="feature-main-container container  d-flex justify-content-center px-3 column-gap-5 row-gap-5 py-5">
             <div
                 class="feature-container d-flex flex-column row-gap-3 justify-content-center align-items-center px-4 py-3 text-center text-white">
-                <i class="bi bi-clipboard-fill fs-3 text-green mb-4"></i>
+                <i class="bi bi-clipboard-fill fs-3 text-blue mb-4"></i>
                 <h4 class="text-uppercase">Site survey</h4>
                 <div class="feature-container-description">
                     Inspections of the proposed work area are conducted to collect essential information for design
@@ -149,7 +146,7 @@
             </div>
             <div
                 class="feature-container d-flex flex-column row-gap-3 justify-content-center align-items-center px-4 py-3 text-center text-white">
-                <i class="bi bi-people-fill fs-3 text-green mb-4"></i>
+                <i class="bi bi-people-fill fs-3 text-blue mb-4"></i>
                 <h4 class="text-uppercase">Project management</h4>
                 <div class="feature-container-description">
                     We lead and coordinate team efforts to achieve project goals within defined timelines and
@@ -159,7 +156,7 @@
             </div>
             <div
                 class="feature-container d-flex flex-column row-gap-3 justify-content-center align-items-center px-4 py-3 text-center text-white">
-                <i class="bi bi-check-circle-fill fs-3 text-green mb-4"></i>
+                <i class="bi bi-check-circle-fill fs-3 text-blue mb-4"></i>
                 <h4 class="text-uppercase">Nationwide Installation</h4>
                 <div class="feature-container-description pb-5">
                     Nationwide Fixture Installations delivers comprehensive, self-performed installation services
@@ -176,7 +173,7 @@
         </div>
         <div class="mb-lg-5 mb-md-4 mb-3 pb-lg-5 pb-md-4 pb-3 vision-section">
             <div class="img-clip-wrapper">
-                <img src="./assets/kevin-jiner-lq5hFF2q82Q-unsplash.jpg" alt="vision">
+                <img src="./assets/about-us-img.png" alt="vision">
             </div>
             <div class="vision-container px-5 py-5">
                 <h3 class="our-vision-text text-uppercase text-white mt-5 mb-3">about us</h3>
@@ -250,8 +247,9 @@
                     <p class="mb-5 fs-6 text-secondary">Our team will get back to you within 24 hours.</p>
                     <form class="needs-validation" method="POST" action="/submit-form" novalidate>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required minlength="3">
-                            <div class="invalid-feedback">Please enter at least 3 characters.</div>
+                            <input type="text" class="form-control" placeholder="Your Name" required minlength="3" id="name" name="name"
+                            pattern="^[a-zA-Z .]+$">
+                            <div class="invalid-feedback">Please enter only alphabets (A-Z / a-z) and at least 3 characters.</div>
                         </div>
 
                         <div class="mb-3">
@@ -289,7 +287,7 @@
     <!-- footer -->
     <div class="conatiner-fluid footer-section d-flex justify-content-center align-items-center py-5 px-5">
         <div class="container footer-container py-5 px-5">
-            <img src="" alt="Logo" class="mb-4" width="100" />
+            <img src="./assets/logo.png" alt="Logo" class="mb-4" width="200" />
             <div class="d-flex flex-wrap justify-content-between column-gap-5 row-gap-3">
                 <div class="footer-links d-flex flex-column pe-5">
                     <h5 class="fw-bold fs-4">Quick Links</h5>

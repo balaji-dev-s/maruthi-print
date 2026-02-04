@@ -40,7 +40,7 @@ body {
 
 .feature-container {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(219, 46, 46, 0.7) !important;
     transform-origin: left center !important;
     will-change: transform !important;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .feature-container h4:hover {
-    color: #679cbc !important;
+    color: #182F61 !important;
     cursor: default;
 }
 
@@ -60,8 +60,8 @@ body {
     font-weight: bold;
 }
 
-.text-green {
-    color: #c11720 !important;
+.text-blue {
+    color: #e6ece9 !important;
 }
 
 #carouselExampleFade {
@@ -142,7 +142,7 @@ body {
 }
 
 .vision-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(219, 46, 46, 0.8) !important;
     position: absolute;
     top: 10%;
     right: 0;

@@ -17,7 +17,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #182F61 !important;
+    color: #006838 !important;
 }
 
 
@@ -38,7 +38,7 @@
 }
 
 .dropdown-item:hover {
-    color: #182F61 !important;
+    color: #006838 !important;
 }
 
 .active {
@@ -46,7 +46,7 @@
 }
 
 .active:hover {
-    color: #182F61 !important;
+    color: #006838 !important;
 }
 
 .navbar-toggler {
