@@ -161,7 +161,7 @@ body {
 }
 
 .vision-container h3 {
-    color: #052133 !important;
+    color: #ffffff !important;
 }
 
 .our-vision-desc {
@@ -176,7 +176,6 @@ body {
 
 .learn-more-btn:hover {
     letter-spacing: 1px;
-    color: #052133 !important;
 }
 
 .img-clip-wrapper {
