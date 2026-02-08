@@ -1,0 +1,149 @@
+.about-section-header {
+    position: relative;
+    background-image: url("../assets/Aboutuspageheader.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.about-section-header::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0) 46%,
+            rgba(255, 255, 255, 0.18) 50%,
+            rgba(255, 255, 255, 0) 54%);
+    opacity: 0;
+    animation: shine 5s linear infinite;
+    pointer-events: none;
+    transform: translate3d(-30%, -30%, 0);
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+        transform: translate3d(-30%, -30%, 0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+        transform: translate3d(30%, 30%, 0);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(30%, 30%, 0);
+    }
+}
+
+.about-header-section-text {
+    z-index: 10 !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 6rem !important;
+    color: #FFF6D5 !important;
+}
+
+.about-header-section-para {
+    z-index: 10 !important;
+    font-size: larger;
+}
+
+#count,
+.plus {
+    font-size: 4rem !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.years-of-exp-text {
+    font-weight: 500 !important;
+}
+
+.why-choose-us-para {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    color: #BF1E2E !important;
+}
+
+@media (max-width:768px) {
+    .about-header-section-text {
+        font-size: 4rem !important;
+    }
+}
+
+.choose-us-img {
+    background: url("../assets/choose1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    border-radius: 16px !important;
+}
+
+.choose-us-img-two {
+    background: url("../assets/choose2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 16px !important;
+}
+
+.why-choose-us-list {
+    background-color: #0E1E43 !important;
+    border-radius: 16px !important;
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal !important;
+}
+
+/* .why-choose-us-list li {
+    color: #FFF6D5 !important;
+} */
+
+.tick-pulse {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.tick-pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(25, 135, 84, 0.7);
+    animation: pulse-ring 1.6s infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}

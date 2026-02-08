@@ -1,14 +1,12 @@
 .navbar {
     padding-top: 2px !important;
     padding-bottom: 2px !important;
-    position: fixed;
     top: 0;
     z-index: 1030;
     background-color: #fff;
 }
 
 .nav-link {
-    font-family: 'Archivo', sans-serif !important;
     color: #000 !important;
     text-transform: uppercase !important;
     font-size: 14px !important;
