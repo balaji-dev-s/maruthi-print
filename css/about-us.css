@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.about-section-header::after {
+/* .about-section-header::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -48,7 +48,7 @@
         opacity: 0;
         transform: translate3d(30%, 30%, 0);
     }
-}
+} */
 
 .about-header-section-text {
     z-index: 10 !important;
@@ -79,11 +79,11 @@
     color: #BF1E2E !important;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .about-header-section-text {
-        font-size: 4rem !important;
+        font-size: 6rem !important;
     }
-}
+} */
 
 .choose-us-img {
     background: url("../assets/choose1.png");
