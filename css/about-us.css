@@ -79,11 +79,11 @@
     color: #BF1E2E !important;
 }
 
-/* @media (max-width:768px) {
+@media (max-width:768px) {
     .about-header-section-text {
-        font-size: 6rem !important;
+        font-size: 4rem !important;
     }
-} */
+}
 
 .choose-us-img {
     background: url("../assets/choose1.png");
