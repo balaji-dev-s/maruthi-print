@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const counter = document.getElementById("count");
     const start = 0;
-    const end = 20;
+    const end = 6;
     const duration = 1500;
 
     let hasStarted = false;
