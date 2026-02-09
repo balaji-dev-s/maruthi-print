@@ -211,7 +211,8 @@ body {
 .project-text,
 .project-tag-text {
     font-family: 'Oswald', sans-serif !important;
-    color: #182F61;
+    font-weight: 900 !important;
+    color: #0E1E43 !important;
 }
 
 .vision-container {
@@ -549,7 +550,7 @@ body {
     font-size: larger;
 }
 
-#count,
+.count,
 .plus {
     font-size: 4rem !important;
     font-family: 'Oswald', sans-serif !important;
@@ -561,9 +562,10 @@ body {
     color: #0E1E43 !important;
 }
 
-.why-choose-us-text{
+.why-choose-us-text {
     font-family: 'Oswald', sans-serif !important;
     font-weight: 900 !important;
+    color: #0E1E43 !important;
 }
 
 .why-choose-us-para {
@@ -721,6 +723,31 @@ body {
     color: #0E1E43;
 }
 
-.red-text{
+.red-text {
     color: #c11720 !important;
+}
+
+.get-in-touch-container h1 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #0E1E43 !important;
+}
+
+.get-in-touch-container h4 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #BF1E2E !important;
+}
+
+.get-in-touch-btn {
+    border: 1px solid #0E1E43 !important;
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #0E1E43;
+    transition: 0.15s all;
+    font-weight: 500;
+}
+
+.get-in-touch-btn:hover {
+    background: none;
+    color: #0E1E43 !important;
+    font-weight: 600;
 }

@@ -1,34 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-    const counter = document.getElementById("count");
-    const start = 0;
-    const end = 6;
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".count");
     const duration = 1500;
 
-    let hasStarted = false;
-
-    const observer = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting && !hasStarted) {
-            hasStarted = true;
-            startCounter();
-            observer.disconnect();
-        }
-    }, { threshold: 0.6 });
-
-    observer.observe(counter);
-
-    function startCounter() {
-        let current = start;
-        const stepTime = duration / (end - start);
-
-        const timer = setInterval(function () {
-            current++;
-            counter.textContent = current;
-
-            if (current >= end) {
-                clearInterval(timer);
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
             }
-        }, stepTime);
-    }
+        });
+    }, { threshold: 0.4 });
 
+    counters.forEach(c => observer.observe(c));
+
+    function animateCounter(el) {
+        const end = parseInt(el.dataset.target, 10);
+        if (!end || end <= 0) return;
+
+        let startTime = null;
+
+        function update(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            el.textContent = Math.floor(progress * end);
+
+            if (progress < 1) requestAnimationFrame(update);
+            else el.textContent = end; 
+        }
+
+        requestAnimationFrame(update);
+    }
 });
