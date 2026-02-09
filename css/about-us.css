@@ -66,10 +66,12 @@
 .plus {
     font-size: 4rem !important;
     font-family: 'Oswald', sans-serif !important;
+    color: rgb(0, 104, 56) !important;
 }
 
 .years-of-exp-text {
     font-weight: 500 !important;
+    color: #0E1E43 !important;
 }
 
 .why-choose-us-para {
@@ -145,5 +147,37 @@
     100% {
         transform: scale(1.4);
         opacity: 0;
+    }
+}
+
+.gradient-line {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #C11720, transparent);
+}
+
+.logo-track {
+    width: max-content;
+    animation: logo-scroll 25s linear infinite;
+}
+
+.logo-box {
+    min-width: 120px;
+    height: 60px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #555;
+}
+
+@keyframes logo-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
     }
 }
