@@ -554,7 +554,7 @@ body {
 .plus {
     font-size: 4rem !important;
     font-family: 'Oswald', sans-serif !important;
-    color: rgb(0, 104, 56) !important;
+    color: #004223 !important;
 }
 
 .years-of-exp-text {
@@ -628,7 +628,7 @@ body {
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    border: 2px solid rgba(25, 135, 84, 0.7);
+    border: 2px solid rgb(96, 226, 165, 0.7);
     animation: pulse-ring 1.6s infinite;
 }
 
@@ -755,7 +755,7 @@ body {
 .mission-vision-text-heading {
     font-family: 'Oswald', sans-serif !important;
     font-weight: 900 !important;
-    color: #198754 !important;
+    color: #60E2A5 !important;
 }
 
 .mission-container {
