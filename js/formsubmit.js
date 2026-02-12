@@ -14,7 +14,8 @@ document.getElementById("enquiryForm").addEventListener("submit", e => {
     message: f.message.value
   };
 
-  alert("Enquiry submitted successfully");
+  // Show popup
+  document.getElementById("successPopup").classList.add("active");
 
   f.reset();
   f.classList.remove("was-validated");
@@ -25,3 +26,10 @@ document.getElementById("enquiryForm").addEventListener("submit", e => {
     body: JSON.stringify(data)
   });
 });
+
+// Close popup (X and button)
+document.querySelector(".close-popup").onclick = () =>
+  document.getElementById("successPopup").classList.remove("active");
+
+document.querySelector(".back-btn").onclick = () =>
+  document.getElementById("successPopup").classList.remove("active");
