@@ -695,7 +695,7 @@ body {
     width: 200px !important;
     height: 250px !important;
     border: 1px solid #8C2025 !important;
-    border-radius: 10% !important;
+    border-radius: 16px !important;
 }
 
 @media (max-width: 767px) {
