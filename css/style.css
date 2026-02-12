@@ -844,3 +844,24 @@ body {
     color: #0E1E43 !important;
     font-weight: 600;
 }
+
+.contact-section-header {
+    position: relative;
+    background-image: url("../assets/Aboutuspageheader.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.contact-info h6 {
+    font-family: 'Oswald', sans-serif !important;
+    color: #0E1E43 !important;
+}
+
+.contact-header-section-text {
+    z-index: 10 !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 4rem !important;
+    color: #FFF6D5 !important;
+}
