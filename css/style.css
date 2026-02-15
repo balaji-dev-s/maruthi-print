@@ -877,13 +877,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.logo-box img {
-    max-height: 70px;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: 0.3s ease;
-}
-
 .logo-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -904,4 +897,16 @@ body {
     text-underline-offset: 12px;
     text-decoration-thickness: 8px;
     color: #BF1E2E;
+}
+
+.khalids-biriyani-logo{
+    background-color: #C32222 !important;
+}
+
+.Biriyani-Brothers{
+    background-color: black !important;
+}
+
+.Aazhi-retail-store{
+    background-color: #000 !important;
 }
