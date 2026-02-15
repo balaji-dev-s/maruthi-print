@@ -865,3 +865,43 @@ body {
     font-size: 4rem !important;
     color: #FFF6D5 !important;
 }
+
+.logo-box {
+    padding: 30px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo-box img {
+    max-height: 70px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+.logo-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.logo-box:hover img {
+    filter: grayscale(0%);
+}
+
+.clients-heading-text {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: clamp(3rem, 5vw, 4rem) !important;
+    color: #0E1E43 !important;
+}
+
+.clients-heading-text span {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 8px;
+    color: #BF1E2E;
+}
